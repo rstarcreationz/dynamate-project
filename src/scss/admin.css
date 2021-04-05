@@ -1,0 +1,2476 @@
+
+@font-face {
+    src: url("../assets/Fonts/Nunito-Regular.ttf");
+    font-family: 'Nunito';
+}
+
+body{
+    font-family: 'Nunito'!important;
+    background: #ebedef !important;
+}
+
+.pac-container {
+    background-color: #FFF;
+    z-index: 2001;
+    position: fixed;
+    display: inline-block;
+    float: left;
+}
+
+/* .modal{
+    z-index: 2000;
+}
+ .modal-backdrop{
+    z-index: 1000;
+}​ */
+
+.navbar-toggler {border: none !important; margin-left: auto;}
+.navbar.navbar-light .navbar-toggler-icon {
+    background-image: none !important;
+}
+.navbar.navbar-light .navbar-toggler i {
+    color: #F5B729;
+    font-size: 22px;
+}
+.section-title{text-align: center;}
+.section-title h3{
+    color: #283138;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+    display: inline-block;
+    position: relative;
+}
+.section-title h3:after{
+    width: 100%;
+    height: 1px;
+    background: #283138;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    border-radius: 10px;
+}
+a:hover{text-decoration: none !important;}
+.dataTables_empty{
+    display: none;
+}
+::placeholder{color: #fff !important;}
+.Front_wrapper {
+    background: #283138;
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.front_form {
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+}
+.signup_Form input::-webkit-outer-spin-button,
+.signup_Form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.errorMessage {
+    color: #F5B729 !important;
+    font-size: 14px;
+}
+
+.front_form .form-control {
+    background: transparent;
+    color: #fff !important;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+    padding-top: 0;
+}
+.front_form label{
+    color: #fff;
+    margin: 0;
+}
+
+.front_form .form-control:focus, .front_form .form-control:active{
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color: #F5B729;
+}
+
+.front_form .default_btn {
+    background:#F5B729;
+    color: #fff !important;
+    border-radius: 25px !important;
+    width: 100%;
+    display: block !important;
+    border-color:#F5B729;
+    margin: 25px 0;
+    padding: 10px 0;
+}
+
+.custom_btn {
+    background:#283138 !important;
+    color: #F5B729 !important;
+    border-radius: 25px !important;
+    display: block !important;
+    border-color:#F5B729;
+    margin: 25px 0;
+    padding: 10px 0;
+    border: none;
+    transition: 0.2s all ease-in-out;
+}
+.custom_btn:active, .custom_btn:focus, .custom_btn:hover{
+    box-shadow: 0px 2px 4px 2px #00000030 !important
+}
+
+.front_form .default_btn:hover,.front_form .default_btn:active,.front_form .default_btn:focus{
+    background:#F5B729;
+    border-color:#F5B729;
+    box-shadow: none;
+}
+.front_form .form-group h4 {
+    color: #fff;
+}
+
+.forget p {font-size: 14px;}
+
+.front_form .form-group a:hover{
+    text-decoration: none;
+}
+.front_form .form-group a{
+    color: #fff;
+}
+.front_form .form-group p {color: #fff;}
+.front_form .form-group p a{
+    color:#F5B729;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.form_logo {
+    padding: 0px 0 60px;
+}
+.form_logo img {
+    width: 130px;
+    margin: auto;
+    display: block;
+}
+
+.setpasswordpopup .modal-dialog{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+
+.setpasswordpopup .modal-content {
+    min-height: 255px;
+    max-width: 280px;
+    margin: auto;
+    background-color: #F5B729 !important;
+    border-radius: 15px !important;
+}
+
+.setpasswordpopup .modal-body{
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px 0 !important;
+}
+
+.setpasswordpopup .modal-body button {
+    padding: 0px 30px;
+    border: none;
+    border-radius: 8px !important;
+    margin: auto;
+}
+.setpasswordpopup .modal-body img {max-width: 60px;}
+.inner_popup {
+    padding: 30px 0;
+}
+.inner_popup h5 {color: #283138 !important;}
+
+/* ///////////////// Front Homepage /////////////// */
+
+header {
+    background: #283138;
+    box-shadow: 0px 2px 6px 0px rgb(34 32 32 / 18%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+#google_translate_element {
+    position: fixed;
+    z-index: 3;
+    right: 12px;
+    top: 0;
+}
+#google_translate_element select {
+    width: 65px;
+}
+#google_translate_element select:focus{
+    outline: none;
+}
+div#goog-gt-tt {display: none !important;}
+.goog-te-gadget {
+    color: transparent !important;
+}
+.goog-logo-link {
+    display: none !important;
+}
+.goog-te-banner-frame {display: none !important;}
+
+.navbar-brand img {
+    max-width:70px;
+}
+
+.navbar-expand-lg {padding: 0 !important;}
+
+.carousel ul li img {
+    height: 480px;
+    object-fit: cover;
+}
+.thumbs-wrapper {display: none;}
+
+.navbar-nav a {color: #F5B729 !important; font-weight: 600; margin-right: 25px;}
+.navbar-nav a:last-child{margin-right: 0;}
+.navbar-nav a:hover {text-decoration: none;}
+
+.carousel-caption {
+ margin-bottom: 150px;   
+ z-index: 10 !important;
+ bottom: -20px !important;
+}
+.control-arrow {display: none;}
+.carousel-caption .fullnamebanner {
+    color: #F5B729;
+    font-weight: 600;
+    text-shadow: 4px 0 #00000082;
+}
+.carousel-caption h5 {color: #61b7f9; font-weight: 600; text-shadow: 4px 0 #00000082;}
+.banner_overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #00000059;
+    width: 100%;
+    height: 540px;
+}
+.carousel .control-dots .dot {
+    width: 15px !important;
+    height: 15px !important;
+}
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+    outline: none;
+    border: none;
+}
+
+.card_Sec {
+    margin: auto;
+}
+.availablematscard{
+    padding: 0 30px;
+    height: 475px;
+    overflow-y: scroll;
+}
+.availablematscard::-webkit-scrollbar {
+    width: 6px;
+  }
+  .availablematscard::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  .availablematscard::-webkit-scrollbar-thumb {
+    background: #F5B729;
+  }
+
+.jobsiteModal .modal-content {
+    max-width: 420px !important;
+    padding: 30px 25px 0px!important;
+}
+
+.Jobsite{
+    padding: 30px 0 0px;
+    position: relative;
+}
+.Jobsite a:hover{
+    text-decoration: none;
+}
+.create_jobsite{
+    border: 2px solid #283138;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.availablejobsiteleft{
+    float: left;
+    width: 100%;
+    max-width: 195px;
+}
+.availablejobsiteright{
+    float: right;
+}
+.create_jobsite svg {color: #283138;}
+.card-left {
+    float: left;
+    padding: 10px;
+    width: 40%;
+}
+.card-left h4 {font-size: 36px;}
+
+.Jobsite .card {
+    background: #283138;
+    color: #F5B729;
+    border-radius: 25px;
+    max-height: 125px;
+}
+
+.Jobsite .card div button {
+    padding: 3px 15px;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+   
+}
+
+.right-card .jobsite_frontcard {
+    height: 125px;
+    min-height: 122px;
+    margin: 15px auto;
+    margin-top: 0;
+}
+.right-info  {
+    overflow: hidden;
+    width: 60%;
+    float: left;
+}
+
+.yardviewCard{
+    background: #283138 !important;
+    color: #F5B729;
+    border: none !important;
+    border-radius: 15px !important;
+    max-height: 100px;
+}
+
+/* ////////// Product css ///////// */
+
+.Products {
+    position: relative;
+    padding: 30px 0;
+}
+
+.Products .product_Card {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px 1px #00000030;
+    max-width: 320px;
+}
+.Products .card-img img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 25px;
+}
+.Products .card-img {
+    width: 100%;
+    max-width: 100%
+}
+
+.Products .card-info {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+
+.Products .card-info h5{
+    color: #283138;
+    font-weight: 600;
+}
+.Products .card-info h6 {
+    color: #283138;
+    font-weight: 600;
+}
+
+.product_Desc p {
+    width: 280px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail_Desc {margin-top: 10px;}
+.detail_Desc p {padding: 0 !important;}
+
+
+.order_Card .col-md-5, .order_Card .col-md-7 {
+    padding: 0 10px;
+}
+
+.Products a:hover {text-decoration: none;}
+
+.order_Card  .card-info h6 {
+    color: #283138;
+    font-weight: 600;
+}
+
+/* ///// jobsite view css */
+.jobsite_view {
+    padding: 90px 0 30px;
+    position: relative;
+}
+.jobsite_view .viewbtn{
+    background: #283138;
+    padding: 0px 10px;
+    color: #fff;
+    margin-right: 10px !important;
+    border-radius: 25px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.jobsite_view .product_Card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 1px 6px 0px #00000030;
+    padding: 15px;
+}
+.jobsite_view .jobdelete {
+    float: right;
+    background: red !important;
+}
+
+.jobsite_view .card-img p {
+    font-size: 16px;
+    width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-img a{
+    color: #283138;
+}
+.card-img a:hover{text-decoration: none;}
+
+/* //////// jobsite_Detail ///////// */
+.boxborder {
+    padding: 20px; border: 1px solid rgba(0, 0, 0, 0.253);
+    background: #fff;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 19%);
+    border-radius: 15px;
+}
+.jobsite_Detail {
+    padding: 120px 0 60px;
+    position: relative;
+}
+.jobsite_Detail iframe {
+    height: 270px;
+    width: 270px;
+    margin: 0 12px;
+    border: 1px solid #0003;
+}
+.jobsite_Detail .map_View{
+    display:block;
+    float: left;
+    margin-right: 10px;
+    min-width: 380px;
+}
+
+.Product_Detail_Card .Product_img {
+    min-width: auto !important;
+    padding-right: 20px !important;
+}
+
+.job-info, .Matsite {
+    overflow: hidden;
+    position: relative;
+}
+.job-info .row{padding: 10px 0;}
+
+.job-info{ padding-left: 15px; padding-top: 5px;}
+
+.job-info h6, .job-info p{
+    margin: 0;
+    padding: 10px 0;
+}
+
+.MultipleBtn {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+.Matsite .custom_btn {
+    float: left;
+    margin: 15px 0;
+    margin-right: 10px;
+    padding: 5px 50px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.jobdetailremove {border-right: 1px solid rgba(0, 0, 0, 0.274);}
+.jobdetailremove .right-card {margin: 20px 0 0;}
+.jobdetailremove .card {
+    background: #283138;
+    border-radius: 15px;
+    color: #F5B729;
+    margin: 0 0 10px;
+}
+.jobdetailremove .right-card .col-md-12{padding-left: 0px; padding-right: 30px;}
+.jobdetailremove .card .card-body {padding: 10px;}
+
+.jobdetailremove .right-info {width: 50%; float: left;}
+
+.jobdetailremove .jobicon {
+    float: right;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.jobdetailremove h5 {font-weight: 600; text-align: center; margin: 0px 0 10px;}
+
+
+.rightmap {margin: 45px 0 0;}
+.boxborder .rightmap {padding-left: 0; padding-right: 0;}
+
+.jobsite_Detail .modal-content {
+    background: #fff !important;
+}
+
+.jobmodal .modal-content {
+    max-width: 320px;
+    margin: auto;
+    padding: 30px 0 0px;
+    border-radius: 15px;
+}
+
+.jobmodal .modal-content label {font-size: 14px; font-weight: 500; color: #000;}
+.jobmodal .modal-content .form-control:active, .jobmodal .modal-content .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #F5B729;
+}
+
+
+.jobmodal .modal-content select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+
+  }
+  
+  .jobmodal .modal-content select + i.fa {
+    float: right;
+    margin-top: -30px;
+    margin-right: 5px;
+    pointer-events: none;
+    background-color: #283138;
+    /* padding-right: 0; */
+    color: #F5B729;
+    padding: 2px 5px;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  .jobmodal .modal-content .Matsite button {
+      text-align: center;
+      margin: auto;
+      float: none;
+      margin-top: 10px;
+      margin-bottom: 0;
+  }
+
+  .closemodal i {font-size: 12px;}
+.closemodal {
+    background-color: #283138;
+    padding: 1px 5px;
+    font-size: 12px;
+    border-radius: 50%;
+    color: #f5b729;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: -20px;
+}
+
+.customclose {
+    width: 25px;
+    height: 25px;
+    margin-right: -15px;
+    padding: 4px 6px;
+}
+.customclose i {font-size: 16px;}
+
+/* /////////// transfer mat details css */
+.MatDetails {
+    position: relative;
+    padding: 120px 0 15px;
+    overflow: hidden;
+}
+.Matcard{
+    padding: 10px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 19%);
+}
+.Matcard h5 {text-align: center; margin-bottom: 15px;}
+.Matcard ul {
+    list-style-type: none;
+    padding: 0;
+    /* max-width: 300px; */
+    margin: auto;
+    text-align: center;
+    margin: 15px 0 0;
+}
+.Matcard ul li {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+}
+
+.totalmatcard ul li {
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+    margin: auto;
+}
+
+.transfermat_Details .Matcard {padding: 30px;}
+.transfermat_Details ul li{
+    width: 25%;
+}
+.fourmatcard span {margin-right: 10px; font-size: 22px;}
+.fourmatcard span:last-child {margin-right: 0px; font-size: 18px;}
+
+.fourmatcard{
+    background: #283138;
+    padding: 12px 8px;
+    border-radius: 15px;
+    color: #F5B729;
+    text-align: center;
+    margin: 10px 15px;
+}
+.TransferMatbtn .custom_btn {
+    width: 280px;
+    margin: 15px auto;
+    display: block !important;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mates_useCard{
+    background: #283138;
+    padding: 15px;
+    border-radius: 10px;
+    color: #F5B729;
+    margin: 10px;
+}
+.mates_useCard a {color: #fff; transition: 0.2s all ease-in-out;}
+.mates_useCard a:hover {text-decoration: none !important;}
+/* //////////// ordermat form ////////// */
+
+.dynamatCard label {font-size: 16px; font-weight: 500; color: #000; margin: 0;}
+.react-datepicker-wrapper {width: 100%; margin-top: 10px;}
+.react-datepicker-wrapper input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+.dynamatCard .form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.react-datepicker {
+    font-family: 'Nunito' !important;
+}
+
+.jobsitedatepicker .react-datepicker__input-container [type="text"] {
+    border: 1px solid #ced4da;
+    height: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.jobsitedatepicker .react-datepicker__input-container [type="text"]:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: #F5B729;
+}
+
+.dynamatCard .form-control:active, .dynamatCard .form-control:focus, .react-datepicker-wrapper input {
+    box-shadow: none;
+    outline: none;
+    border-color: #F5B729;
+}
+.dynamatCard select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+
+  }
+.OrderCard {
+    padding: 40px 40px 20px;
+    box-shadow: 0px 3px 10px 2px #00000026;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.OrderCard .TransferMatbtn .custom_btn {
+    width: 220px;
+    margin: 15px auto;
+    display: block !important;
+    padding: 10px 0;
+    font-size: 18px;
+}
+  
+  .dynamatCard select + i.fa {
+    float: right;
+    margin-top: -30px;
+    margin-right: 5px;
+    pointer-events: none;
+    background-color: #283138;
+    /* padding-right: 0; */
+    color: #F5B729;
+    padding: 2px 5px;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  .custom_mrg {
+      margin-top: 30px;
+      margin-bottom: 0px !important;
+  }
+
+  .react-datepicker__input-container [type="text"] {
+    background:#fff url('../assets/FrontImage/ProfileIcon/calendar.svg')  97% 50% no-repeat;
+    /* background-position: right; */
+  }
+  [type="date"] {
+    background:#fff url('../assets/FrontImage/ProfileIcon/calendar.svg')  97% 50% no-repeat;
+    /* background-position: right; */
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  .react-datepicker__day--selected{
+    background-color: #283138 !important;
+    color: #fff !important;
+  }
+  .react-datepicker__day--selected:hover{
+      background-color: #F5B729 !important;
+      color: #283138 !important;
+  }
+  .react-datepicker__day--keyboard-selected{
+    background-color: #F5B729 !important;
+  }
+  .react-datepicker__header {background-color: #283138 !important;}
+  .react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {color: #fff !important;}
+  .react-datepicker__day-name {color: #fff !important;}
+  .react-datepicker__today-button {background-color: #283138 !important; color: #Fff;}
+  .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle {border-top-color: #283138 !important;}
+  /* //// order css ////// */
+  .Product_list, .OrderList {
+      padding: 120px 0 30px;
+  }
+
+  .order_Card  .card-img{
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .order_Status {
+    text-align: center;
+    display: block;
+    margin-top: -30px;
+    font-size: 12px;
+    background: #F5B729;
+    padding: 3px 8px;
+    border-radius: 6px;
+    color: #fff;
+    float: right;
+  }
+  .order_Card .card-info h5 {max-width: 160px;}
+  .color-grey {background: #283138;}
+  .color-green {background: #035c03;}
+
+  /* //// Product_Details //////// */
+
+  .Product_Details .Product_img img {
+    max-width: 345px;
+    border-radius: 5px;
+    height: auto;
+  }
+  .Product_Detail_Card {
+    padding: 25px;
+    box-shadow: 0px 0px 1px 2px #99999926;
+    padding-bottom: 35px;
+    float: left;
+  }
+  .Product_Detail_Card .job-info {
+      padding-left: 50px;
+  }
+  .Product_Detail_Card .job-info .row {
+      padding: 0;
+  }
+
+  /* ////// project manager ///// */
+
+  .projectmanagerSec {
+      padding: 120px 0 60px;
+  }
+
+  .Project_manage {
+      background: #fff;
+      box-shadow: 0 1px 6px 0 rgb(0 0 0 / 19%);
+      border-radius: 15px;
+      position: relative;
+      padding: 30px;
+     
+  }
+  .projectmanager_list{
+    height: 380px;
+    overflow-y: scroll;
+  }
+
+  .Project_manage p{
+      color: #666;
+  }
+  .projectbtn {align-items: center; padding: 0px 0;}
+  .projectbtn p {
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .projectbtn .assignyellow{
+    background: #283138;
+    color: #fff;
+  }
+
+  .projectbtn .assigngreen{
+    background: green;
+  }
+
+  .projectmanager_list::-webkit-scrollbar {
+    width: 6px;
+  }
+  .projectmanager_list::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  .projectmanager_list::-webkit-scrollbar-thumb {
+    background: #F5B729;
+  }
+
+  .notassign p{
+      background: red;
+  }
+  .Project_manage a h5 {color: #283138; font-weight: 500; font-size: 24px;}
+/* ///////// yard css /////// */
+  .yardform  select + i.fa {
+    float: right;
+    margin-top: -30px;
+    margin-right: 5px;
+    pointer-events: none;
+    background-color: #F5B729;
+    /* padding-right: 0; */
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+.yardform .form-control:active, .yardform .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #F5B729;
+}
+.yardform .form-control:active, .yardform .form-control:focus{
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #F5B729  !important;
+    border: 1px solid;
+}
+.yardform select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+
+}
+
+/* ///////// Profileview //////// */
+.profile_wrapper {
+    background: #ebedef;
+    padding: 120px 0 30px;
+    min-height: 100vh;
+    display: flex;
+}
+.Profile_body {
+    width: 100%;
+    margin-right: 115px;
+}
+.profile_Card {
+    padding: 25px;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 19%);
+    background-color: #fff;
+}
+.Profileview {
+    position: relative;
+}
+.profile_details {padding: 30px 0;}
+
+.profileEdit_btn button {
+    width: 100%;
+    max-width: 220px;
+    margin: 10px 0;
+}
+.profileEdit_btn a:hover {text-decoration: none;}
+.profileupdate_btn .custom_btn {font-size: 16px;}
+
+.Profile_pic {border-right: 1px solid #ccc;}
+.Profile_pic img {
+    max-width: 150px;
+    border: 4px solid #283138;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+    display: block
+}
+.Profile_pic h5 {margin: 10px 0 0; text-align: center;}
+.profile_Detail label {font-size: 18px;}
+.profile_Detail p {font-size: 16px; color: #666; padding-right: 5px;}
+
+.profileupdate_btn .custom_btn {
+    width: 220px;
+    margin: 10px 0 0;
+}
+
+/* //////// help_card /////// */
+.help_card {
+    padding: 30px 25px 30px;
+}
+.help_card h3 {color: #283138; margin: 25px 0;}
+.help_card h5 {margin: 25px 0; color: #F5B729;}
+.help_card a:hover{
+    text-decoration: none;
+}
+
+
+
+.Footer{
+    padding: 30px 0 0;
+    position: relative;
+    background: #283138;
+    border-top-left-radius: 125px;
+}
+
+.Footer p {color: #fff; font-weight: 600; text-align: center;}
+
+/* ////////// sidebar css ////////// */
+
+.usertitle {
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 19%);
+}
+.custom-design-area {
+    width: 250px;
+    z-index: 1;
+    top: 0;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-right: 25px;
+}
+
+.sidebarmenu {
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 19%);
+    height: 100%;
+}
+
+.sidebarmenu ul{list-style-type: none; padding: 0; margin: 0;}
+
+.sidebarmenu ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #cccaaa85;
+    transition: 0.2s all ease-in-out;
+}
+
+.sidebarmenu ul li p {
+    padding: 0px 25px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-weight: 600;
+    color: #6d6d6d;
+}
+
+/* .sidebarmenu ul li p {
+    text-align: right;
+} */
+
+.sidebarmenu ul li p i{
+    margin-right: 10px;
+    color: #F5B729;
+    transition: 0.2s all ease-in-out;
+}
+
+.sidebarmenu ul li a i{
+    margin-right: 10px;
+    color: #F5B729;
+}
+.sidebarmenu ul li a img {
+    margin-right: 15px;
+}
+.sidebarmenu ul li .log_out img{
+    margin-right: 15px;
+}
+
+.sidebarmenu ul li:last-child {
+    border: none;
+}
+
+.inner-ul ul li:hover{
+    background-color: #f1f1f1;
+}
+
+.sidebarmenu ul li a {
+    padding: 0 25px;
+    display: block;
+    width: 100%;
+    color: #6d6d6d;
+}
+.sidebarmenu ul li a:hover{text-decoration: none;}
+.usertitle {
+    padding: 15px;
+    background: #fff;
+    margin: 0 0 10px;
+    box-shadow: 0px 0px 3px 0px #b6b4b46b;
+    display: flex;
+}
+.uservector{
+    width: 65px;
+}
+.uservector  img{width: 50px;}
+
+.userhello p {margin: 0; line-height: 1;}
+.usertitle h4 span {font-size: 18px;}
+.log_out {
+    padding: 0 25px;
+    display: block;
+    width: 100%;
+    color: #6d6d6d;
+    cursor: pointer;
+}
+.log_out i {margin-right: 10px;
+    color: #F5B729;}
+
+.logoutPopup .modal-content {
+    width: 100%;
+    margin: auto;
+    margin-top: 120px;
+    text-align: center;
+    border-radius: 15px;
+}
+.logoutPopup .modal-content .modal-body {
+    padding: 0 !important;
+    width: 100%;
+}
+
+.logoutPopup .modal-content .messagelogout {
+    padding: 25px 0 10px;
+}
+
+.logoutPopup .modal-content span {
+    padding: 20px 0px;
+    display: block;
+    float: left;
+    width: calc(100% - 250px);
+    cursor: pointer;
+}
+.logoutPopup .modal-content span:first-child{
+    border-right: 1px solid #6666664f;
+}
+
+.logout_confirm {
+    border-top: 1px solid #6666664f;
+}
+
+/* ////////////Manager Add css ////////// */
+
+.addManager label {font-size: 16px; font-weight: 500; color: #000;}
+
+.addManager .form-control:active, .addManager .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #F5B729;
+}
+.addManager select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+
+  }
+
+  .addManager select + i.fa {
+    float: right;
+    margin-top: -30px;
+    margin-right: 5px;
+    pointer-events: none;
+    background-color: #283138;
+    /* padding-right: 0; */
+    color: #F5B729;
+    padding: 2px 5px;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  .custom-alert {margin: 10px; margin-bottom: 0 !important;}
+
+  /* ///////////// profile upload css /////// */
+
+  
+  .addManager .field{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    }
+.addManager input[type="file"] {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .addManager .custom-file-upload {
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    padding: 6px;
+    cursor: pointer;
+    background: linear-gradient(270deg, #283138, #283138);
+    margin-bottom: 25px;
+  }
+  
+  .addManager .img-wrap{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .addManager .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 150px;
+    max-width: 150px;
+  }
+ 
+  .addManager .img-upload:hover:before{
+   opacity: 1;
+  }
+ 
+  .p-image {
+    position: absolute;
+    right: 0;
+    color: #283138;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    background: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #283138;
+    padding: 5px;
+    left: 140px;
+    margin: auto;
+    bottom: 40px;
+}
+
+.YardPopup .modal-content{
+    width: 420px;
+}
+
+.YardPopup .modal-content span {
+    width: 208px;
+}
+
+.contact_card {
+    position: relative;
+    text-align: center;
+    padding: 25px 10px 15px;
+}
+
+.contact_card .contact_icon{
+    background: #283138;
+    width: 60px;
+    height: 60px;
+    color: #F5B729;
+    border-radius: 50%;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+}
+.contact_card .contact_icon svg {
+    font-size: 32px;
+    margin: 13px;
+}
+
+.contact_card h5, .contact_card p {
+    margin: 15px 0;
+}
+
+.contact_card:hover .contact_icon {
+    box-shadow: 0px 2px 4px 2px #28313838;
+    transform: translate(0, -10px);
+}
+.mobile_Viewbtn {display: none;}
+
+.ResponsiveSidebar {display: none;}
+.Mats_in_use ul li {
+    width: 23%;
+    height: 160px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.Mats_in_use ul li .mates_useCard .card-img p {
+    width: 215px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+} 
+.Mats_in_use ul {
+    text-align: left;
+}
+.Mats_in_use ul h4 {
+    text-align: center;
+}
+.Matcard ul li p {
+    width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.NotFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.notfound_head h1{
+    font-size: 90px;
+}
+
+.navbar-nav p {
+    color: #F5B729 !important;
+    font-weight: 600;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.navbar-nav .dropdown button {
+    background: transparent;
+    color: #f5b729;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+    margin-right: 25px;
+}
+
+.navbar-nav .dropdown button:active, .navbar-nav .dropdown button:focus{
+    border: none;
+    background-color: transparent;
+    box-shadow: none !important;
+    color: #f5b729;
+}
+
+.navbar-nav .dropdown button:active, .navbar-nav .dropdown button:not(:disabled):not(.disabled):active:focus, .navbar-nav .dropdown button:active, .navbar-nav .dropdown button:not(:disabled):not(.disabled).active:focus, .show > .navbar-nav .dropdown button:active, .navbar-nav .dropdown button.dropdown-toggle:focus {
+    border: none;
+    background-color: transparent;
+    box-shadow: none !important;
+    color: #f5b729;
+}
+
+.totalmateview {
+    font-size: 26px;
+}
+.totalmateview span {font-size: 20px;}
+
+.product-para p{
+    font-size: 16px;
+    width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pwdicon {
+    text-align: right;
+    float: right;
+    margin-top: -30px;
+    display: block;
+    color: #f5b729;
+    cursor: pointer;
+}
+
+.Contactusview {
+    padding-top: 100px;
+}
+
+.sendMessage {
+    background:#283138 !important;
+    color: #F5B729 !important;
+    border-radius: 25px !important;
+    border-color:#283138;
+    margin: 25px 0;
+    padding: 10px 30px;
+    border: none;
+    transition: 0.2s all ease-in-out;
+}
+
+/* ////////// chat message css ////////////// */
+
+
+.msger {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 10px;
+    box-shadow: 0 6px 12px -5px rgba(0, 0, 0, 0.2);
+  }
+  .Messageus {
+    margin-top: 125px;
+  }
+  .Messageus .section-title h3  {
+      margin-bottom: 20px;
+  }
+  .msger-header {
+    display: block;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: var(--border);
+    background: #f1f1f1;
+    color: #666;
+  }
+  
+  .msger-chat {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+  .msger-chat::-webkit-scrollbar {
+    width: 6px;
+  }
+  .msger-chat::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  .msger-chat::-webkit-scrollbar-thumb {
+    background: #F5B729;
+  }
+  .msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  .msg:last-of-type {
+    margin: 0;
+  }
+  .msg-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #ddd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .msg-bubble {
+    max-width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #f1f1f1;
+  }
+  .msg-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .msg-info-name {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .msg-info-time {
+    font-size: 12px;
+  }
+  
+  .left-msg .msg-bubble {
+    border-bottom-left-radius: 0;
+  }
+  
+  .right-msg {
+    flex-direction: row-reverse;
+  }
+  .right-msg .msg-bubble {
+    background: #283138;
+    color: #F5B729;
+    border-bottom-right-radius: 0;
+  }
+  .right-msg .msg-img {
+    margin: 0 0 0 10px;
+  }
+  
+  .msger-inputarea {
+    display: flex;
+    padding: 10px;
+    border-top: var(--border);
+    background: #f1f1f1;
+  }
+  .msger-inputarea * {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+  }
+  .msger-input {
+    flex: 1;
+    background: #00000026;
+    height: 44px !important;
+  }
+  .msger-inputarea ::placeholder {
+      color: #000;
+  }
+  .msger-send-btn {
+    margin-left: 10px;
+    background: #283138;
+    color: #F5B729;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.23s;
+  }
+  .msger-send-btn:hover {
+    background: #f5b729;
+    color: #283138;
+  }
+  
+  .msger-chat {
+    background-color: #fcfcfe;
+  }
+
+  .editlocation {
+      margin-top: -38px;
+  }
+
+  .msg-img img{
+    width: 50px;
+    object-fit: cover;
+    height: 50px;
+  }
+  .msger-input:focus, .msger-input:active{
+      border-color: #F5B729 !important;
+      box-shadow: none !important;
+      border: 1px solid;
+  }
+  /* //////////// history page design ///// */
+  .historyfilter {
+      display: block;
+      max-width: 250px;
+      margin-left: auto;
+      text-align: left;
+  }
+
+  .historyfilter label{font-size: 14px;}
+
+  .historytypefilter{
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .historyfilter select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+  
+    }
+
+    .historyfilter  select option:hover{
+        background: #F5B729;
+    }
+    
+    .historyfilter  select + i.fa {
+      float: right;
+      margin-top: -30px;
+      margin-right: 5px;
+      pointer-events: none;
+      background-color: #283138;
+      /* padding-right: 0; */
+      color: #F5B729;
+      padding: 2px 5px;
+      font-size: 16px;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+  .historyfilter select{
+    border-color: #f5b82c;
+    border-radius: 0;
+  }
+  .historyfilter select:active, .historyfilter select:focus{
+      box-shadow: none;
+      outline: none;
+      border-color: #F5B729;
+  }
+
+  .history_area {
+    display: flex;
+    width: 100%;
+    background: #f5b82c2b;
+    padding: 20px 20px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #00000026;
+  }
+  .history_area .content {
+      display: flex;
+  }
+  .icon {
+    display: block;
+    min-width: 40px;
+    position: relative;
+    overflow: hidden;
+    background: #283138;
+    border-radius: 50%;
+    height: 38px;
+  }
+  .icon svg {
+    color: #F5B729;
+    padding: 5px;
+    font-size: 35px;
+  }
+  .history_area .content h5 {margin: 0; text-align: left; color: #000; font-size: 17px;}
+  .history_area .content p{color: #858585; font-size: 14px; margin-top: 5px; text-align: left;}
+  .historytime {
+    width: 10%;
+    text-align: right;
+    min-width: 75px;
+  }
+  .historymsg {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    width: 100%;
+    min-width: 570px;
+  }
+  .historytime span{
+    padding: 5px 10px;
+    background: #f5b82c;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .history_overflow {
+      height: 400px;
+      overflow-y: auto;
+      margin-top: 0px;
+      padding: 10px;
+  }
+  .historytitle h3 {margin: 0 0 10px;}
+
+  .history_overflow::-webkit-scrollbar {
+    width: 6px;
+  }
+  .history_overflow::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  .history_overflow::-webkit-scrollbar-thumb {
+    background: #F5B729;
+  }
+
+  
+/* ////////// error message css //////// */
+
+.noproductserror{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 45vh;
+}
+   
+.btn_attachment {
+    margin: 0;
+    margin-left: auto;
+    padding: 10px 0px;
+    text-align: center;
+    width: 70%;
+}
+
+.nochatimg {
+    text-align: center;
+}
+
+.nochatimg img {
+    max-width: 320px;
+    height: 230px;
+    object-fit: cover;
+}
+.nochatimg p {margin-top: -15px;}
+.order_Card {
+    display: flex !important;
+    max-width: 100% !important;
+    min-height: 200px;
+}
+.order_Card .card-img {width: 40% !important; padding: 0 !important;}
+.order_Card .card-img img {height: 100%; object-fit: cover;}
+.order_Card .card-info {width: 100%; padding: 10px !important;}
+
+.order_Card .card-info h5 {max-width: 100%;}
+
+.conditionli li {
+    width: 24% !important;
+}
+
+.totalmatescard {
+    list-style: none;
+    padding: 0  ;
+}
+
+.totalmatescard li {
+    display: inline-block;
+    width: 32%;
+    margin-right: 14px;
+}
+
+.totalmatescard li:last-child{margin-right: 0;}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ////// loading spinner css //// */
+.chatspinner {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.normalspinner {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.fullviewspinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0000006b;
+    height: 100%;
+}
+.signupspinner {min-height: 840px;}
+
+.order_Card{
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 19%);
+    display: block;
+    margin: auto;
+}
+
+.jobsiteopen {
+    float: right;
+    background: #283138;
+    color: #fff !important;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: -75px;
+}
+
+.modaltable .table .thead-dark th {
+    padding: 5px 6px;
+    font-weight: 500;
+    font-size: 11px;
+    text-align: center;
+    background: #283138;
+    border-color: #283138;
+    color: #F5B729;
+}
+
+.modaltable .table th, .modaltable .table td{
+    border: 1px solid;
+    font-size: 11px;
+    text-align: center;
+    padding: 8px 0 5px;
+    border-color: #283138;
+}
+
+.showform {display: block;}
+.hiddenform{display: none;}
+
+.hidefield {display: none;}
+.showfield {display: block;}
+
+
+/* The container */
+.customradio {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .customradio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .customradio:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .customradio input:checked ~ .checkmark {
+    background-color: #283138;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .customradio input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .customradio .checkmark:after {
+        top: 3px;
+        left: 3px;
+        width: 9px;
+        height: 9px;
+      border-radius: 50%;
+      background: white;
+  }
+
+.changecolor {color: #000 !important; font-weight: 600; background: #F5B729 !important;}
+
+.customsizearea {display: flex;}
+.widthsize {width: 30%; margin-top: 20px;}
+.heightsize {width: 30%; margin-top: 20px;}
+.customsizearea input {
+    height: 30px;
+}
+.sizex {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    position: relative;
+    width: 10%;
+}
+
+.MultipleBtn  button {padding: 10px 50px !important;}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    
+    .navbar-brand {
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin: 0 !important;
+    }
+    .navbar-toggler {
+        float: left;
+        position: absolute;
+        display: block;
+    }
+    .navbar-nav {display: none !important;}
+    .mb-5 {margin-bottom: 25px !important;}
+    .navbar-nav a {margin: 10px 0;}
+    .carousel-caption {left: 0 !important; right: 0 !important; width: 100%; padding: 0 15px; margin-bottom: 150px;}
+    .carousel-caption h5 {line-height: 1.7;}
+    .carousel-caption h5 h1 {font-size: 26px;}
+    .carousel-item img {height: 420px;}
+    .section-title {display: none;}
+    .right-card .jobsite_frontcard {height: 115px;}
+    .jobsitefront_card {margin: 20px 0 0;}
+    .profileupdate_btn .custom_btn {margin: auto;}
+    .profileEdit_btn button {margin: auto;}
+
+    .Jobsite {padding: 60px 0 30px;}
+    .Jobsite .card div button {margin:0;margin-left: auto; padding: 3px 10px;}
+    .product-para p {margin: 0; width: 100%;}
+    .jobsiteopen {float: none; border-radius: 10px; padding: 0px; margin-top: 0; margin: auto; width: 80%; text-align: center; display: block;}
+    
+    /* for responsive */
+    .mobile_Viewbtn {display: block; text-align: center;}
+    .mobile_Viewbtn .custom_btn{width: 100%; padding: 15px 0; font-size: 20px;}
+    .responsive_products {display: none;}
+    .Products .product_Card {
+        display: inline-block;
+        width: 100%;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 4px 6px 1px #00000030;
+        display: block;
+        margin: auto;
+    }
+    .Products .card-img img {width: 90px; height: 90px; border-radius: 15px; padding: 10px; padding-top: 5px; }
+    .Products .card-img {
+        float: left;
+        width: 100%;
+        max-width: 90px;
+        padding: 0;
+    }
+
+    .Products .product_Card {
+        width: calc(100% - 60px);
+    }
+    .Products .card-info {
+        overflow: hidden;
+        text-align: left;
+        padding: 15px 16px 10px;
+    }
+
+    .Products .card-info h6 {font-size: 18px;}
+
+    .Products .card-info h5{
+        color: #F5B729;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .Products .card-info h6 {
+        color: #283138;
+        font-weight: 600;
+    }
+    .Products .card-info .col-md-6 {width: 50%;}
+    .Product_list .card-img{float: none !important; width: 100% !important; max-width: 100%; text-align: center; padding-top: 10px;}
+    .Product_list .card-img img {min-width: 90%; height: 200px; padding: 0;}
+
+    .Product_Detail_Card .Product_img {
+        padding-right: 0px !important;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .Product_Details .Product_img img {
+        max-width: 280px;
+    }
+
+    /* /////// jobsite card css responsive /////// */
+    .product_Card .card-img {
+        float: left;
+        width: 70%;
+    }
+    .card-info {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    }
+    .jobsite_view .viewbtn {width: 80%; margin: 5px auto; display: block;}
+    .jobsite_view .container .text-right {margin-bottom: 25px;}
+    .jobsite_view .row .mb-5{margin-bottom: 25px !important;}
+    .jobsite_view .card-img p {max-width: 90%;}
+    .jobdetailremove {border-right: 0px;}
+    .jobdetailremove .right-card .col-md-12 {    padding-right: 15px;padding-left: 15px;}
+    .jobicon {float: right; margin-top: -65px;}
+    .job-info h6, .job-info p {padding: 5px 0;}
+    .Matsite .custom_btn {margin: 15px 0 0;width: 100%;padding: 12px 0;font-size: 18px;}
+    .boxborder {border-color: #fff;}
+    .job-info .col-md-8 {width: 60%;}
+    .job-info .col-md-4 {width: 40%;}
+    .jobsite_Detail {padding: 90px 0 30px;}
+
+    .Matcard {border: none;}
+
+   
+    .YardPopup .modal-content {width: 100%;}
+    .YardPopup .modal-content span {max-width: 170px;}
+    
+    /* .mobilesidebar {display: none;} */
+    .profile_wrapper {background: #fff; overflow: hidden; padding: 90px 0 30px;}
+    .custom-design-area{
+        position: fixed;
+        margin-left: -80%;
+         height: 100%;
+         width: 80%; 
+         margin-top: 0px;
+         transition: margin 0.3s ease;
+         z-index: 111;
+    }
+    .usertitle {margin: -2px 0; box-shadow: none; background: #283138;}
+    .sidebarmenu {background: #283138;}
+    .Profile_body {width: 100%; margin-right: 0;}
+    .profile_Card{padding: 0; box-shadow: none;}
+    .Profile_pic {border-right: 0; margin: auto;}
+    .profile_Detail {margin: 10px 0 0; padding: 0 30px;}
+    .profile_Detail h4 {display: none;}
+    .profile_Detail .form-group {margin-bottom: 25px;}
+    .addManager {margin-bottom: 0 !important;}
+    .sidebarmenu ul li {border: none;}
+    .sidebarmenu ul li a {color: #F5B729;}
+    .log_out {color: #F5B729;}
+    .Profile_pic img {max-width: 120px; height: 120px;}
+    .togglemargin {margin-left: 0px; transition: margin 0.3s ease;}
+    .webview {display: block;}
+    
+    .ResponsiveSidebar {display: block;padding: 0px 0;background: #283138;}
+    /* .ResponsiveSidebar .Profile_pic {margin-bottom: 30px;} */
+    .ResponsiveSidebar .Profile_pic img {border: 1px solid #666; width: 90px; height: 90px;}
+    .websidebar {display: none;}
+
+    /* //// order css //// */
+    .order_Card h6 {font-size: 14px !important;}
+    .order_Card .card-info {margin: 15px 0 0; padding-left: 0px;}
+    .order_Card .card-info h5 {font-size: 16px;}
+    .order_Status {width: 60px; margin-top: -15px;}
+    .order_Card .card-info .col-md-5{width: 40%;}
+    .order_Card .card-info .col-md-7{width: 60%;}
+    .order_Card .card-info h6 {overflow: unset;}
+    .OrderList .row .mb-5 {margin-bottom: 10px !important;}
+    .order_Card {display: block !important;}
+    .order_Card .card-img {max-width: 100% !important; width: 100% !important;}
+    .order_Card .card-img img {width: 100%; min-height: 220px; padding: 10px;}
+
+
+    /* ///// modal css //// */
+    .jobmodal .modal-content {width: auto !important; max-width: 100%  !important;}
+    .responsive-manager-title {display: block;}
+    .responsive-manager-title h3 {display: none;}
+    html:not([dir="rtl"]) .float-right {float: none !important;}
+    .responsive-manager-title a .create_jobsite {display: block;width: 100px;margin-left: auto;}
+    .messagelogout h5 {font-size: 16px;}
+    .logout_confirm span {font-size: 14px; min-width: 50%;}
+
+    /* // project manager /// */
+    .projectmanager_list {margin-top: 30px; height: calc(100vh - 250px);}
+    .projectmanager_list .row {margin-top: 20px;}
+    .projectmanager_list .row .col-md-10 {width: 65%;}
+    .projectmanager_list .row .col-md-2 {width: 35%;}
+    .Project_manage p {width: 165px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+    .projectbtn p {max-width: 90px;display: inline-block;margin-right: 10px; padding: 2px; margin-bottom: 5px;}
+    .Project_manage {padding: 15px;}
+    .projectmanager_list::-webkit-scrollbar {height: 6px;}
+    .projectmanager_list .row .col-xs-8 {width: 60%;}
+    .projectmanager_list .row .col-xs-4 {width: 40%;}
+    
+    /* /// contact css /// */ 
+    .contact_card {padding: 10px 10px 15px;}
+    .Contactusview {padding-bottom: 30px;}
+    .logoutPopup .modal-content {width: 100%;}
+
+    /* //// mats css /// */
+    .MatDetails {padding: 120px 0 15px;}
+    .Matcard ul li {width: 50%;}
+    .Matcard ul li .fourmatcard {height: auto; overflow: hidden;}
+    .Matcard ul {padding-bottom: 15px !important;}
+    .card_Sec .right-card h5 {margin: 0 0 20px;}
+    .transfermat_Details .Matcard {padding: 15px;}
+    .MatDetails .card_Sec {margin: 10px 0 0;}
+    .Mats_in_use ul li {width: 100%; padding: 0; margin: 0;}
+    .Mats_in_use ul li .mates_useCard .card-img p {width: 100%;}
+    .fourmatcard h5 {font-size: 14px;}
+    .totalmatescard li {width: 100%;}
+    .right-card .mt-5 {margin-top: 5px !important;}
+    .availablejobsiteright {float: none;}
+    .availablejobsiteright button {max-width: 250px;}
+    .availablejobsiteleft {max-width: 150px;}
+
+    /* ///// jobsite detail css */
+    .jobsite_Detail .jobicon {margin: 0;}
+    .jobsite_Detail .map_View {float: none; min-width: 100%;}
+    .jobsite_Detail .map_View div {margin: auto;}
+    .rightmap {margin: 15px 0 0;}
+    .jobsite_Detail .job-info {margin: 15px 0 0;}
+    .jobsite_Detail .job-info h4 {text-align: center;}
+    .map_View div:first-child {    height: 220px;
+        width: 100%; max-width: 100%;}
+
+    /* ///// message chat css */
+    .Messageus{margin-top: 100px;}
+    .msger {margin: 25px 0;}
+    .msger-chat {height: calc(100vh - 250px);}
+    .msg-img img {width: 50px; height: 50px;}
+    .msg-info-name {font-size: 12px;}
+    .msg-info-time {font-size: 9px;}
+    .mobile_Viewbtn {display: none;}
+    .btn_attachment {margin: auto;}
+    
+    /* ///// history css  */
+     .history_overflow::-webkit-scrollbar {
+        height: 6px;
+       }
+       .historymsg {min-width: 0%;}
+       .history_area {padding: 10px 20px 0;}
+       .historyfilter {max-width: 100%;}
+       .history_overflow{height: calc(100vh - 330px); margin-top: 20px;}
+
+       .sidebarmenu, .usertitle {
+           box-shadow: none;
+       }
+       .sidebarmenu ul {
+        box-shadow: none;
+       }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 567px) {
+    .section-title {display: none;}
+    /* header */
+    .navbar-brand {width: 100%;text-align: center;float: left;margin: 0 !important;}
+    .navbar-toggler {float: left;position: absolute;display: block;}
+    /* responsivesidebar */
+    .ResponsiveSidebar {display: block;padding: 0px 0;background: #283138;}
+    .sidebarmenu, .usertitle {box-shadow: none;}
+    .sidebarmenu ul { box-shadow: none;}
+    .usertitle {margin: -2px 0; box-shadow: none; background: #283138;}
+    .sidebarmenu {background: #283138;}
+    .sidebarmenu ul li {border: none;}
+    .sidebarmenu ul li a {color: #F5B729;}
+    .log_out {color: #F5B729;}
+    .Profile_pic img {max-width: 120px; height: 120px;}
+    .togglemargin {margin-left: 0px !important; transition: margin 0.3s ease;}
+    .webview {display: block;}
+    .profile_wrapper {background: #fff; overflow: hidden; padding: 90px 0 30px;}
+    .custom-design-area{position: fixed;margin-left: -80%;height: 100%;width: 65%; margin-top: 0px; transition: margin 0.3s ease;z-index: 111;}
+    .Profile_pic {border-right: 0; margin: auto;}
+
+    /* .ResponsiveSidebar .Profile_pic {margin-bottom: 30px;} */
+    .ResponsiveSidebar .Profile_pic img {border: 1px solid #666; width: 90px; height: 90px;}
+    .websidebar {display: none;}
+    /* homepage css */
+    .carousel-caption {width: 100% !important; left: 0% !important;}
+    .Jobsite .card {max-height: 100%;width: 85%;margin: 25px auto;margin-top: 0;}
+
+    /* /// totalmats /// */
+    .totalmatcard ul li {width: 50%;}
+    .totalmatescard {text-align: center;}
+    .totalmatescard  li {width: 80%; margin: auto; }
+    .availablematscard {margin-top: 20px;}
+     /* /// matsdetails /// */
+     .transfermat_Details ul li {width: 50%;}
+     .Matcard ul {margin-bottom: 10px;}
+     .TransferMatbtn .custom_btn {margin: 8px auto;}
+
+     /* mates in use */
+     .Mats_in_use ul li {width: 45%;}
+     .Mats_in_use ul li .mates_useCard .card-img p {width: 100%;}
+     .Mats_in_use .pb-5 {padding-bottom: 10px !important;}
+
+     /* /// jobdetail */
+     .jobsite_Detail .map_View {float: none;}
+     .map_View div:first-child {width: 100% !important; height: 280px !important;}
+     .job-info .row .col-md-8 {width: 60%; flex: 60%;}
+     .job-info .row .col-md-4 {width: 40%; flex: 40%;}
+     .MultipleBtn {margin-top: 25px;}
+     .Matsite .custom_btn {width: 220px; display: inline-block !important; float: none; margin-top: 0; font-size: 14px; padding: 10px 0;}
+
+     /* jobsite */
+     .jobsite_view .product_Card {width: 70%; margin: auto;}
+     .jobsiteopen {padding: 3px 15px;}
+     .jobsite_view .viewbtn {padding: 3px 15px; margin-right: 0 !important;}
+
+     /* order */
+     .order_Card .col-md-5 {width: 40%; flex: 40%;}
+     .order_Card .col-md-7 {width: 60%; flex: 60%;}
+    
+     /* product */
+     .Products .product_Card {max-width: 60%; margin: auto; display: block;}
+     .Product_Details .Product_img img {max-width: 100%;}
+     .jobsite_Detail .job-info h4 {text-align: center; margin-top: 15px;}
+     .btn_attachment {margin: auto; width: 50%;}
+
+     .projectmanager_list .row .col-xs-8 {width: 70%;}
+     .projectmanager_list .row .col-xs-4 {width: 30%;}
+     .responsive-manager-title {display: block; text-align: right; margin-bottom: 30px;}
+     .responsive-manager-title h3 {display: none;}
+     .projectmanager_list {height: calc(100vh - 330px);}
+
+     /* /// profile // */
+     .Profile_body {width: 100%; margin-right: 0;}
+     .profile_details {padding: 15px; box-shadow: none; width: 70%; margin: auto; padding-top: 30px;}
+     .profile_Detail {padding: 25px 0 0 ;}
+     .profileEdit_btn button {margin: auto; margin-top: 15px;}
+     .profile_Card {box-shadow: none;}
+     /* ////logout/// */
+     .logoutPopup .modal-content {width: 100%;}
+     .logoutPopup .modal-content span {width: 50%;}
+
+     /* message */
+     .msger-chat {height: calc(100vh - 330px);}
+     .msger {margin: 25px 0;}
+     .order-title {display: block; text-align: right;}
+     .order-title h3{ display: none; }
+     html:not([dir="rtl"]) .float-right {float: none !important;}
+     .order-title {margin-bottom: 25px;}
+
+     /* // history // */
+     .historyfilter {margin: auto;}
+     .history_overflow {height: calc(100vh - 330px);}
+ }
+
+ /* till 767px */
+
+ @media screen and (min-width: 568px) and (max-width: 767px) {
+    .section-title {display: none;}
+    /* header */
+    .navbar-brand {width: 100%;text-align: center;float: left;margin: 0 !important;}
+    .navbar-toggler {float: left;position: absolute;display: block;}
+    /* responsivesidebar */
+    .ResponsiveSidebar {display: block;padding: 0px 0;background: #283138;}
+    .sidebarmenu, .usertitle {box-shadow: none;}
+    .sidebarmenu ul { box-shadow: none;}
+    .usertitle {margin: -2px 0; box-shadow: none; background: #283138;}
+    .sidebarmenu {background: #283138;}
+    .sidebarmenu ul li {border: none;}
+    .sidebarmenu ul li a {color: #F5B729;}
+    .log_out {color: #F5B729;}
+    .Profile_pic img {max-width: 120px; height: 120px;}
+    .togglemargin {margin-left: 0px !important; transition: margin 0.3s ease;}
+    .webview {display: block;}
+    .profile_wrapper {background: #fff; overflow: hidden; padding: 90px 0 30px;}
+    .custom-design-area{position: fixed;margin-left: -80%;height: 100%;width: 50%; margin-top: 0px; transition: margin 0.3s ease;z-index: 111;}
+    .Profile_pic {border-right: 0; margin: auto;}
+
+    /* .ResponsiveSidebar .Profile_pic {margin-bottom: 30px;} */
+    .ResponsiveSidebar .Profile_pic img {border: 1px solid #666; width: 90px; height: 90px;}
+    .websidebar {display: none;}
+    /* homepage css */
+    .carousel-caption {width: 100% !important; left: 0% !important;}
+    .Jobsite .card {max-height: 100%;width: 70%;margin: 25px auto;margin-top: 0;}
+
+    /* /// totalmats /// */
+    .totalmatcard ul li {width: 50%;}
+    .totalmatescard {text-align: center;}
+    .totalmatescard  li {width: 80%; margin: auto; }
+    .availablematscard {margin-top: 20px;}
+     /* /// matsdetails /// */
+     .transfermat_Details ul li {width: 50%;}
+     .Matcard ul {margin-bottom: 10px;}
+     .TransferMatbtn .custom_btn {margin: 8px auto;}
+
+     /* mates in use */
+     .Mats_in_use ul li {width: 45%;}
+     .Mats_in_use ul li .mates_useCard .card-img p {width: 100%;}
+     .Mats_in_use .pb-5 {padding-bottom: 10px !important;}
+
+     /* /// jobdetail */
+     .jobsite_Detail .map_View {float: none; padding-right: 0 !important; margin-right: 0;}
+     .map_View div:first-child {width: 100% !important; height: 280px !important;}
+     .MultipleBtn {margin-top: 25px;}
+     .Matsite .custom_btn {width: 220px; display: inline-block !important; float: none; margin-top: 0; font-size: 14px; padding: 10px 0;}
+
+     /* jobsite */
+     .jobsite_view .product_Card {width: 100%; margin: auto;}
+     .jobsiteopen {padding: 0px 10px;}
+     .jobsite_view .viewbtn {padding: 0px 10px; margin-right: 0 !important;}
+
+     /* order */
+   
+    
+     /* product */
+     .Products .product_Card { margin: auto; display: block;}
+     .Product_Details .Product_img img {max-width: 100%;}
+     .jobsite_Detail .job-info h4 {text-align: center; margin-top: 15px;}
+     .btn_attachment {margin: auto; width: 50%;}
+
+     .responsive-manager-title {display: block; text-align: right; margin-bottom: 30px;}
+     .responsive-manager-title h3 {display: none;}
+     .projectmanager_list {height: calc(100vh - 210px);}
+     .custom_mrgleft {margin-left: 0 !important;}
+
+     /* /// profile // */
+     .Profile_body {width: 100%; margin-right: 0;}
+     .profile_details {padding: 15px; box-shadow: none; width: 100%; margin: auto; padding-top: 30px;}
+     .profile_Detail {padding: 25px 0 0;}
+     .profileEdit_btn button {margin: auto; margin-top: 15px;}
+     .profile_Card {box-shadow: none;}
+     .profile_Detail h4 {border-bottom: 1px solid #ddd; padding: 0 0 10px;}
+     /* ////logout/// */
+     .logoutPopup .modal-content {width: 100%;}
+     .logoutPopup .modal-content span {width: 50%;}
+
+     /* message */
+     .msger-chat {height: calc(100vh - 275px);}
+     .msger {margin: 25px 0;}
+     .order-title {display: block; text-align: right;}
+     .order-title h3{ display: none; }
+     html:not([dir="rtl"]) .float-right {float: none !important;}
+     .order-title {margin-bottom: 25px;}
+
+     /* // history // */
+     .historyfilter {margin: auto;}
+     .history_overflow {height: calc(100vh - 230px); margin-top: 15px;}
+     .historymsg {min-width: 90%;}
+ }
+
+ /* till 991px */ 
+
+ @media screen and (min-width: 768px) and (max-width: 991px) {
+    .section-title {display: none;}
+    /* header */
+    .navbar-brand {width: 100%;text-align: center;float: left;margin: 0 !important;}
+    .navbar-toggler {float: left;position: absolute;display: block;}
+    /* responsivesidebar */
+    .ResponsiveSidebar {display: block;padding: 0px 0;background: #283138;}
+    .sidebarmenu, .usertitle {box-shadow: none;}
+    .sidebarmenu ul { box-shadow: none;}
+    .usertitle {margin: -2px 0; box-shadow: none; background: #283138;}
+    .sidebarmenu {background: #283138;}
+    .sidebarmenu ul li {border: none;}
+    .sidebarmenu ul li a {color: #F5B729;}
+    .log_out {color: #F5B729;}
+    .Profile_pic img {max-width: 120px; height: 120px;}
+    .togglemargin {margin-left: 0px !important; transition: margin 0.3s ease;}
+    .webview {display: block;}
+    .profile_wrapper {background: #fff; overflow: hidden; padding: 90px 0 30px;}
+    .custom-design-area{position: fixed;margin-left: -80%;height: 100%;width: 40%; margin-top: 0px; transition: margin 0.3s ease;z-index: 111;}
+    .Profile_pic {border-right: 0; margin: auto;}
+
+    /* .ResponsiveSidebar .Profile_pic {margin-bottom: 30px;} */
+    .ResponsiveSidebar .Profile_pic img {border: 1px solid #666; width: 90px; height: 90px;}
+    .websidebar {display: none;}
+    /* homepage css */
+    .carousel-caption {width: 100% !important; left: 0% !important;}
+    .Jobsite .card {max-height: 100%;width: 100%;margin: 25px auto;margin-top: 0;}
+    .mdcard {width: 60% !important; margin: auto;}
+
+    /* /// totalmats /// */
+    .totalmatcard ul li {width: 50%;}
+    .totalmatescard {text-align: center;}
+    .totalmatescard  li {width: 45%; margin: auto; margin-left: 15px; }
+    .availablematscard {margin-top: 20px;}
+     /* /// matsdetails /// */
+     .transfermat_Details ul li {width: 50%;}
+     .Matcard ul {margin-bottom: 10px;}
+     .TransferMatbtn .custom_btn {margin: 8px 0;}
+
+     /* mates in use */
+     .Mats_in_use ul li {width: 45%;}
+     .Mats_in_use ul li .mates_useCard .card-img p {width: 100%;}
+     .Mats_in_use .pb-5 {padding-bottom: 10px !important;}
+
+     /* /// jobdetail */
+     .jobsite_Detail .map_View {float: none; padding-right: 0 !important; margin-right: 0;}
+     .map_View div:first-child {width: 100% !important; height: 280px !important;}
+     .MultipleBtn {margin-top: 25px;}
+     .Matsite .custom_btn {width: 250px; display: inline-block !important; float: none; margin-top: 0; font-size: 14px; padding: 10px 0;}
+
+     /* jobsite */
+     .jobsite_view .product_Card {width: 100%; margin: auto;}
+     .jobsiteopen {padding: 0px 10px;}
+     .jobsite_view .viewbtn {padding: 0px 10px; margin-right: 0 !important;}
+     .jobsite_view .card-img p {width: 250px;}
+
+     /* order */
+     .order_Card .card-img {width: 45% !important;}
+     .offsetremove {margin-left: 15% !important;}
+    
+     /* product */
+     .Products .product_Card { margin: auto; display: block;}
+     .Product_Details .Product_img img {max-width: 75%;margin: auto;display: block;margin-bottom: 10px;}
+     .jobsite_Detail .job-info h4 {text-align: center; margin-top: 15px;}
+     .btn_attachment {margin: 10px auto; width: 100%; max-width: 70%;}
+
+     .responsive-manager-title {display: block; text-align: right; margin-bottom: 30px;}
+     .responsive-manager-title h3 {display: none;}
+     .projectmanager_list {height: calc(100vh - 210px);}
+     .custom_mrgleft {margin-left: 15% !important;}
+
+     /* /// profile // */
+     .Profile_body {width: 100%; margin-right: 0;}
+     .profile_details {padding: 15px; box-shadow: none; width: 100%; margin: auto; padding-top: 30px;}
+     .profile_Detail {padding: 0;}
+     .profileEdit_btn button {margin-top: 15px;}
+     .profile_Card {box-shadow: none;}
+     .profile_Detail h4 {border-bottom: 1px solid #ddd; padding: 0 0 10px;}
+     .addManager .img-wrap {width: 150px; height: 150px;}
+     .addManager .img-wrap img {max-width: 150px; min-height: 150px;}
+     .p-image {left: 135px;}
+     /* ////logout/// */
+     .logoutPopup .modal-content {width: 100%;}
+     .logoutPopup .modal-content span {width: 50%;}
+
+     /* message */
+     .msger-chat {height: calc(55vh - 275px);}
+     .msger {margin: 25px 0;}
+     .order-title {display: block; text-align: right;}
+     .order-title h3{ display: none; }
+     html:not([dir="rtl"]) .float-right {float: none !important;}
+     .order-title {margin-bottom: 25px;}
+     .deleteoffset {margin-left: 0 !important;}
+     .contact_card p {font-size: 14px;}
+
+     /* // history // */
+     .historyfilter {margin: auto;}
+     .history_overflow {height: calc(55vh - 230px); margin-top: 15px;}
+     .historymsg {min-width: 90%;}
+ }
+
+ /* till 1200px */ 
+
+ @media screen and (min-width: 992px) and (max-width: 1200px) {
+   
+    .custom-design-area {width: 40%; margin-left: 0;}
+    /* .ResponsiveSidebar .Profile_pic {margin-bottom: 30px;} */
+    .ResponsiveSidebar .Profile_pic img {border: 1px solid #666; width: 90px; height: 90px;}
+    /* homepage css */
+    .carousel-caption {width: 100% !important; left: 0% !important;}
+    .Jobsite .card {max-height: 100%;width: 100%;margin: 25px auto;margin-top: 0;}
+    .mdcard {width: 100% !important; margin: auto;}
+    .availablejobsiteright {margin-top: -100px;}
+
+    /* /// totalmats /// */
+    .totalmatcard ul li {width: 25%;}
+    .totalmatescard {text-align: center;}
+    .totalmatescard  li {width: 45%; margin: auto; margin-left: 15px; }
+    .availablematscard {margin-top: 20px;}
+     /* /// matsdetails /// */
+     .transfermat_Details ul li {width: 25%;}
+     .Matcard ul {margin-bottom: 10px;}
+     .fourmatcard {margin: 10px 5px;}
+     .TransferMatbtn .custom_btn {width: 212px; font-size: 16px;}
+     
+
+     /* mates in use */
+     .Mats_in_use ul li {width: 45%;}
+     .Mats_in_use ul li .mates_useCard .card-img p {width: 100%;}
+     .Mats_in_use .pb-5 {padding-bottom: 10px !important;}
+
+     /* /// jobdetail */
+     .MultipleBtn {margin-top: 25px;}
+     .Matsite .custom_btn {width: 210px; display: inline-block !important;  margin-top: 0; font-size: 14px; padding: 10px 0;}
+
+     /* jobsite */
+     .jobsite_view .product_Card {width: 100%; margin: auto;}
+     .jobsiteopen {padding: 0px 10px;}
+     .jobsite_view .viewbtn {padding: 0px 10px; margin-right: 0 !important;}
+     .jobsite_view .card-img p {width: 250px;}
+
+     /* order */
+     .order_Card .card-img {width: 45% !important;}
+     .order_Card .card-info h6 {font-size: 14px;}
+    
+     /* product */
+     .Products .product_Card { margin: auto; display: block;}
+     .Product_Details .Product_img img {max-width: 75%;margin: auto;display: block;margin-bottom: 10px;}
+     .jobsite_Detail .job-info h4 {text-align: center; margin-top: 15px;}
+     .btn_attachment {margin: 10px auto; width: 100%; max-width: 70%;}
+
+     /* /// profile // */
+     .Profile_body {width: 100%; margin-right: 0;}
+     .profile_details {padding: 15px; box-shadow: none; width: 100%; margin: auto; padding-top: 30px;}
+     .profile_Detail {padding: 0;}
+     .profileEdit_btn button {margin-top: 15px;}
+     .profile_Card {box-shadow: none;}
+     .profile_Detail h4 {border-bottom: 1px solid #ddd; padding: 0 0 10px;}
+     .addManager .img-wrap {width: 150px; height: 150px;}
+     .addManager .img-wrap img {max-width: 150px; min-height: 150px;}
+     .p-image {left: 135px;}
+     /* ////logout/// */
+     .logoutPopup .modal-content {width: 100%;}
+     .logoutPopup .modal-content span {width: 50%;}
+     .profile_wrapper {padding: 120px 30px 30px;}
+
+     /* message */
+     .msger {margin: 25px 0;}
+     .chatspinner {height: 50%;}
+    .normalspinner {height: 50%;}
+    .fullviewspinner {height: 50%;}
+    .signupspinner {min-height: 840px;}
+
+    /* /// history /// */
+    .history_overflow {height: calc(50vh - 439px); margin-top: 15px;}
+    .historymsg {min-width:0%;}
+ }
+
+
+ 
